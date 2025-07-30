@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+.contaner {
+  background-image: url(../image/imagebgi.png);
+  background-size: cover;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  gap: 15%;
+  z-index: 1000px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo {
+  background-image: url(../image/logo.png);
+  padding: 50px 130px;
+  margin-left: 40px;
+}
+.humburger {
+  display: none;
+}
+.navigation {
+  display: flex;
+  float: right;
+  text-align: right;
+}
+.navigation ul {
+  display: flex;
+  gap: 40px;
+
+  padding-right: 30px;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.header-button {
+  display: flex;
+  gap: 50px;
+}
+.signup {
+  cursor: pointer;
+  padding: 0 10px;
+
+  text-align: center;
+  border-radius: 5px;
+}
+.language {
+  padding-right: 15px;
+  border: solid 3px rgb(239, 218, 218);
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+.language:focus {
+  padding-right: 15px;
+  border: solid 3px rgb(247, 247, 247);
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+.language i {
+  float: right;
+  padding-left: 20px;
+}
+.main-contaner {
+  display: flex;
+  /* height: 100vh; */
+  margin-top: 5%;
+}
+.main {
+  margin: 5% 10%;
+}
+.h3-title h3 {
+  padding: 10px;
+  font-size: 25px;
+  color: rgb(194, 28, 28);
+}
+.main-title h1 {
+  padding: 30px 0 0 0;
+  font-size: 70px;
+}
+.main p {
+  font-size: 17px;
+  color: rgb(99, 95, 95);
+  font-family: serif;
+  padding: 10px 0;
+}
+.go-buttons {
+  padding: 15px 0;
+}
+.go-buttons1 {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.go-buttons2 {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+.go-buttons2 i {
+  padding-right: 10px;
+}
+
+.image {
+  float: right;
+  margin-top: 3%;
+}
+.part-two {
+  width: 100%;
+  overflow-x: hidden;
+}
+.part-two p {
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 50px;
+  overflow-x: hidden;
+}
+.part-two h2 {
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 20px 50px;
+  overflow-x: hidden;
+}
+.servise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 50px;
+}
+.servise1 {
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.servise1:hover {
+  transform: scale(1.1);
+  background-color: whitesmoke;
+}
+/* three */
+.plase p {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px 50px;
+  overflow-x: hidden;
+}
+.plase h2 {
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 20px 50px;
+  overflow-x: hidden;
+  margin-bottom: 2%;
+}
+.visit-place {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5fr);
+  gap: 20px;
+  padding: 40px 50px;
+  margin-left: 5%;
+}
+.plase1:hover {
+  transform: scale(1.1);
+}
+.plase1 img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0;
+}
+.plase11 {
+  display: flex;
+  text-align: center;
+}
+.plase11 p {
+  font-size: 15px;
+  padding-left: 10%;
+}
+.plase12 {
+  text-align: center;
+}
+.coloring-plase {
+  background-color: #d5e8f1;
+  width: 71%;
+  margin-top: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* part four */
+.booking {
+  padding: 10px;
+}
+.booking h4 {
+  color: rgb(80, 78, 78);
+  font-size: 20px;
+  margin-left: 5%;
+  padding: 10px 20px;
+}
+.booking h2 {
+  font-size: 50px;
+  margin-left: 5%;
+  padding: 10px 30px;
+}
+.booking-contaner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  padding: 40px 50px;
+  margin-left: 5%;
+  width: 100%;
+}
+.book-contaner-1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0px;
+}
+.book-contaner-1 .book1 {
+  display: flex;
+  gap: 15px;
+  padding: 2%;
+}
+.book1 h5 {
+  text-align-last: left;
+  margin-left: 0;
+  font-size: 20px;
+}
+.book1 p {
+  text-align-last: left;
+  font-size: 15px;
+  margin-left: 0;
+}
+.book1 i {
+  font-size: 40px;
+  padding-right: 0;
+  margin-right: 0;
+  color: white;
+  border-radius: 10px;
+}
+.book-contener-2 {
+  width: 45%;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 5px 5px 10px rgb(249, 249, 249), -5px -5px 10px rgb(247, 239, 239);
+}
+.trip {
+  width: 100%;
+  height: 25vh;
+  padding-right: 10px;
+  margin: 20px;
+}
+.trip-bgi {
+  background-image: url(../image/trip-bgi.png);
+  background-size: cover;
+  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.booking-right-contaner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.right {
+  padding: 10px;
+}
+.right .icones {
+  display: flex;
+}
+.right-contaner {
+  width: 100%;
+  height: 20vh;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 2% 20%;
+  box-shadow: 5px 5px 10px rgb(249, 249, 249), -5px -5px 10px rgb(247, 239, 239);
+}
+.small-bgi {
+  background-image: url(../image/profile.png);
+  background-size: cover;
+  height: 30%;
+  width: 40%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+.right-contaner p {
+  padding-top: 10px;
+}
+/* part six */
+.tesitymoney {
+  text-align-last: left;
+  margin: 10%;
+}
+.tesitymoney h4 {
+  font-size: 24px;
+  font-weight: lighter;
+  color: gray;
+}
+.tesitymoney1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10%;
+}
+.tesitymoney1 h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.tesitymoney1 p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  font-weight: lighter;
+}
+.transport {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 10%;
+  border-radius: 10px;
+
+  background-color: rgb(255, 255, 255);
+  grid-gap: 20px;
+}
+.airlines {
+  padding: 20px;
+
+  border-radius: 10px;
+}
+.transport :hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgb(249, 249, 249), -5px -5px 10px rgb(247, 239, 239);
+}
+.search {
+  width: 100%;
+  height: 30vh;
+  border-radius: 20px;
+}
+.search-image {
+  background-image: url(../image/search-image.png);
+  background-size: cover;
+  height: 40vh;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+.search-contan {
+  top: 100%;
+  left: 50%;
+  color: rgb(181, 106, 106);
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+  padding-top: 40%;
+  display: flex;
+}
+.serch-input {
+  width: 50%;
+  height: 5vh;
+  border-radius: 10px;
+  border-color: white;
+}
+.serch-input:focus {
+  background-color: transparent !important;
+  outline: orange;
+}
+.search-button {
+  width: 10%;
+  background-color: orange;
+  border-radius: 10px;
+  height: 5vh;
+  border-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.search-contan h1 {
+  padding-bottom: 40%;
+  font-size: 70px;
+}
+.contact {
+  margin-top: 10%;
+  padding: 10px 10%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.contact ul h3{
+  padding-bottom: 10px;
+}
+.contact ul{
+  list-style: none;
+ padding-bottom: 20px;
+ font-size: 20px;
+ align-items: center;
+
+}
+.contact ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(73, 69, 69);
+}
+.socal-mediya i{
+  font-size: 40px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+.store{
+  display: grid;
+  grid-template-columns: repeat(2,0.6fr);
+}
+.store i{
+  font-size: 40px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+footer{
+  margin: 5%;
+text-align: center;
+align-items: center;
+
+}
+footer p{
+  font-size: 20px;
+  color: gray;
+}
