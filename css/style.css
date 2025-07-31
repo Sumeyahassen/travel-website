@@ -3,6 +3,7 @@
   padding: 0;
 }
 body {
+  max-width: 100%;
   background-color: white;
   overflow-x: hidden;
 }
@@ -12,12 +13,12 @@ body {
   width: 100%;
 }
 .header {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   line-height: 30px;
   align-items: center;
-  gap: 15%;
-  z-index: 1000px;
+  gap: 2%;
+
   background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
   top: 0;
@@ -25,8 +26,8 @@ body {
 }
 .logo {
   background-image: url(../image/logo.png);
-  padding: 50px 130px;
-  margin-left: 40px;
+  padding: 50px 125px;
+  margin-left: 30px;
 }
 .humburger {
   display: none;
@@ -34,11 +35,12 @@ body {
 .navigation {
   display: flex;
   float: right;
-  text-align: right;
+  text-align: center;
+  max-width: 100%;
 }
 .navigation ul {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 
   padding-right: 30px;
 }
@@ -52,7 +54,8 @@ body {
 }
 .header-button {
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  margin-right: 10px;
 }
 .signup {
   cursor: pointer;
@@ -96,7 +99,7 @@ body {
 }
 .main-title h1 {
   padding: 30px 0 0 0;
-  font-size: 70px;
+  font-size: 60px;
 }
 .main p {
   font-size: 17px;
@@ -146,7 +149,7 @@ body {
 .part-two h2 {
   text-align: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px 50px;
   overflow-x: hidden;
 }
@@ -177,7 +180,7 @@ body {
 .plase h2 {
   text-align: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   padding: 20px 50px;
   overflow-x: hidden;
   margin-bottom: 2%;
@@ -186,8 +189,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1.5fr);
   gap: 20px;
-  padding: 40px 50px;
-  margin-left: 5%;
+  padding: 40px 50px 40px 120px;
+margin: 0 2%;
+}
+.plase1 {
+  background-color: white;
+  border-radius: 10px;
+  height: 70vh;
+  width: 80%;
 }
 .plase1:hover {
   transform: scale(1.1);
@@ -196,6 +205,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0;
+  width: 80%;
 }
 .plase11 {
   display: flex;
@@ -210,7 +220,7 @@ body {
 }
 .coloring-plase {
   background-color: #d5e8f1;
-  width: 71%;
+  width: 80%;
   margin-top: 0;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -226,7 +236,7 @@ body {
   padding: 10px 20px;
 }
 .booking h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 5%;
   padding: 10px 30px;
 }
@@ -373,7 +383,7 @@ body {
   background-image: url(../image/search-image.png);
   background-size: cover;
   height: 40vh;
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -410,7 +420,7 @@ body {
 }
 .search-contan h1 {
   padding-bottom: 40%;
-  font-size: 70px;
+  font-size: 60px;
 }
 .contact {
   margin-top: 10%;
@@ -420,22 +430,21 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
-.contact ul h3{
+.contact ul h3 {
   padding-bottom: 10px;
 }
-.contact ul{
+.contact ul {
   list-style: none;
- padding-bottom: 20px;
- font-size: 20px;
- align-items: center;
-
+  padding-bottom: 20px;
+  font-size: 20px;
+  align-items: center;
 }
-.contact ul li a{
+.contact ul li a {
   text-decoration: none;
   font-size: 15px;
   color: rgb(73, 69, 69);
 }
-.socal-mediya i{
+.socal-mediya i {
   font-size: 40px;
   padding: 10px;
   background-color: white;
@@ -443,11 +452,11 @@ body {
   cursor: pointer;
   margin-bottom: 1px;
 }
-.store{
+.store {
   display: grid;
-  grid-template-columns: repeat(2,0.6fr);
+  grid-template-columns: repeat(2, 0.6fr);
 }
-.store i{
+.store i {
   font-size: 40px;
   padding: 10px;
   background-color: white;
@@ -455,13 +464,137 @@ body {
   cursor: pointer;
   margin-bottom: 1px;
 }
-footer{
+footer {
   margin: 5%;
-text-align: center;
-align-items: center;
-
+  text-align: center;
+  align-items: center;
 }
-footer p{
+footer p {
   font-size: 20px;
   color: gray;
+}
+/* Styles for tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 100px;
+  }
+  #manu{
+    font-size: 50px;
+    color: gray;
+    cursor: pointer;
+    padding: 10px;
+    height: 20px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+
+  .servise1{
+margin: 5%;
+padding: 5px;
+  }
+  
+
+  .visit-place {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    gap: 20px;
+    padding: 40px 50px 40px 120px;
+  }
+  
+  .transport{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact{
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+  }
+  .plase3{
+   align-items: center; 
+   padding-left:50%;
+  
+  }
+  .contact{
+    margin-top: 10%;
+    padding: 50px 10% 10px 10%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  footer{
+    padding-top: 130px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+  }
+  #manu{
+    font-size: 50px;
+    color: gray;
+    cursor: pointer;
+    padding: 10px;
+    height: 20px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .main-contaner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 150vh;
+padding-top: 30px;
+  }
+  .image{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 5px;
+    padding-bottom: 250px;
+  }
+  .servise{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px 50px 40px 120px;
+  }
+  .visit-place {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px 50px 40px 120px;
+  }
+  .transport{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .booking-contaner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact{
+    grid-template-columns: repeat(1, 1fr);
+    height: 40vh;
+    margin-top: 100px;
+  }
+  footer{
+    padding-top: 350px;
+    text-align: center;
+    align-items: center;
+  }
 }
